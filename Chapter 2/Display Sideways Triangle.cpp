@@ -17,37 +17,37 @@ void numOfHashes(int howMany);
 
 int main()
 {
-	for (size_t k = 1; k < 11; ++k)
+	cout << "Solution 1: " << '\n';
+
+	for (size_t k = 1; k < 8; ++k)
 	{
-		if (k < 6) 
+		if (k < 5) 
 		{
-			numOfHashes(6-k);
+			numOfHashes(k);
 		}
 
 		else 
 		{
-			numOfHashes(k - 5);
+			numOfHashes(8 - k);
 		}
 		
 	}
-	
-	
-
-	cout << endl << endl << endl;
-
-	numOfHashes(5);
-	numOfHashes(4);
-	numOfHashes(3);
-	numOfHashes(2);
-	numOfHashes(1);
-	cout << endl;
-	numOfHashes(1);
-	numOfHashes(2);
-	numOfHashes(3);
-	numOfHashes(4);
-	numOfHashes(5);
-	cout << endl;
 		
+	cout << '\n';
+
+	cout << "Solution 2: " << '\n';
+
+	numOfHashes(1);
+	numOfHashes(2);
+	numOfHashes(3);
+	numOfHashes(4);	
+	numOfHashes(3);
+	numOfHashes(2);
+	numOfHashes(1);
+	cout << endl;
+	
+	cout << "Solution 3: " << '\n';
+
 	for (size_t i = 1; i <= 7; i++)
 	{				
 		for (size_t hashes = 1; hashes <= i && hashes <= 8 - i; hashes++)
@@ -57,7 +57,9 @@ int main()
 		cout << endl;		
 	}
 
-	cout << endl;
+	cout << '\n';
+
+	cout << "Solution 4: " << '\n';
 
 	for (signed int i = 1; i <= 7; i++)
 	{
@@ -77,13 +79,3 @@ void numOfHashes(int howMany)
 	}
 	cout << endl;
 }
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

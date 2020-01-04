@@ -1,4 +1,4 @@
-// Shapes using Characters.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// Display Sideways Triangle.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
@@ -9,9 +9,15 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-//Display a triangle with five # as the top and only one # at the bottom
-//Reverse the above and have the five # as the base and only one # at the bottom
+//Display a pyramid with one # at the first line and only one # at the bottom with 4 hashes being the peak. Peak on the right.
 //Constraints are that we can only use cout << "#" and cout << endl;
+//#
+//##
+//###
+//####
+//###
+//##
+//#
 
 void numOfHashes(int howMany);
 
@@ -35,6 +41,9 @@ int main()
 		
 	cout << '\n';
 
+	
+	
+	
 	cout << "Solution 2: " << '\n';
 
 	numOfHashes(1);
@@ -45,6 +54,10 @@ int main()
 	numOfHashes(2);
 	numOfHashes(1);
 	cout << endl;
+	
+	
+	
+	
 	
 	cout << "Solution 3: " << '\n';
 
@@ -59,6 +72,12 @@ int main()
 
 	cout << '\n';
 
+	
+	
+	
+	
+	
+	
 	cout << "Solution 4: " << '\n';
 
 	for (signed int i = 1; i <= 7; i++)
@@ -70,6 +89,9 @@ int main()
 		cout << endl;
 	}
 }
+
+
+
 
 void numOfHashes(int howMany)
 {

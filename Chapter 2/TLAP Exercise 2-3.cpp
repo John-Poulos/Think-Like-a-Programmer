@@ -89,7 +89,19 @@ void Line4and5()
 
 int main()
 {
-   cout << "Solution 1: Line by Line Solution" << endl;
+	cout << "Solution 1: Line by Line Solution Using Functions" << endl;
+
+	Line1();
+	Line2();
+	Line3();
+	Line4and5();
+	Line3();
+	Line2();
+	Line1();
+
+
+
+   cout << "Solution 2: Line by Line Solution" << endl;
    	
    //line 1
 
@@ -205,19 +217,10 @@ int main()
    }
    cout << '\n';
 	
-
-	cout << "Solution 2: Line by Line Solution Using Functions" << endl;
-
-	Line1();
-	Line2();
-	Line3();
-	Line4and5();
-	Line3();
-	Line2();
-	Line1();
+   	
 
 
-	cout << "Test Solution 2: Split Shape into L/R Sides" << endl;
+	cout << "Test Solution 3: Split Shape into L/R Sides" << endl;
 	cout << "Need a way to iterate through a different count within each line " << endl;
 	cout << " in order to complete the right side. " << endl;
 

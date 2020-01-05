@@ -16,30 +16,26 @@
 using std::cout;
 using std::endl;
 
-int main()
+const int SizeOfLine = 14;
+
+void Line1() 
 {
-   cout << "Solution 1: Line by Line Solution" << endl;
-
-	const int SizeOfLine = 14;
-	
-	//line 1
-
 	for (size_t pos = 0; pos < SizeOfLine; pos++)
 	{
-		if(pos == 0 || pos == 13) 
-		{ 
+		if (pos == 0 || pos == 13)
+		{
 			cout << '#';
-		}	
+		}
 		else
 		{
 			cout << ' ';
-		} 
-		
+		}
+
 	}
 	cout << '\n';
-
-	//line 2
-
+}
+void Line2() 
+{
 	for (size_t pos = 0; pos < SizeOfLine; pos++)
 	{
 		if (pos == 1 || pos == 2 || pos == 11 || pos == 12)
@@ -50,12 +46,12 @@ int main()
 		{
 			cout << ' ';
 		}
-		
+
 	}
 	cout << '\n';
-
-	//line 3
-
+}
+void Line3() 
+{
 	for (size_t pos = 0; pos < SizeOfLine; pos++)
 	{
 		if (pos == 2 || pos == 3 || pos == 4 || pos == 9 || pos == 10 || pos == 11)
@@ -68,9 +64,10 @@ int main()
 		}
 
 	}
-	cout << '\n';	
-
-	//line 4 and 5
+	cout << '\n';
+}
+void Line4and5() 
+{
 	for (size_t i = 0; i < 2; i++)
 	{
 		for (size_t pos = 0; pos < SizeOfLine - 3; pos++)
@@ -87,56 +84,137 @@ int main()
 		cout << '\n';
 
 	}
+}
+
+
+int main()
+{
+   cout << "Solution 1: Line by Line Solution" << endl;
+   	
+   //line 1
+
+   for (size_t pos = 0; pos < SizeOfLine; pos++)
+   {
+	   if (pos == 0 || pos == 13)
+	   {
+		   cout << '#';
+	   }
+	   else
+	   {
+		   cout << ' ';
+	   }
+
+   }
+   cout << '\n';
+
+   //line 2
+
+   for (size_t pos = 0; pos < SizeOfLine; pos++)
+   {
+	   if (pos == 1 || pos == 2 || pos == 11 || pos == 12)
+	   {
+		   cout << '#';
+	   }
+	   else
+	   {
+		   cout << ' ';
+	   }
+
+   }
+   cout << '\n';
+
+   //line 3
+
+   for (size_t pos = 0; pos < SizeOfLine; pos++)
+   {
+	   if (pos == 2 || pos == 3 || pos == 4 || pos == 9 || pos == 10 || pos == 11)
+	   {
+		   cout << '#';
+	   }
+	   else
+	   {
+		   cout << ' ';
+	   }
+
+   }
+   cout << '\n';
+
+   //line 4 and 5
+   for (size_t i = 0; i < 2; i++)
+   {
+	   for (size_t pos = 0; pos < SizeOfLine - 3; pos++)
+	   {
+		   if (pos > 2)
+		   {
+			   cout << '#';
+		   }
+		   else
+		   {
+			   cout << ' ';
+		   }
+	   }
+	   cout << '\n';
+
+   }
+
+   //line 6 - repeat of line 3
+
+   for (size_t pos = 0; pos < SizeOfLine; pos++)
+   {
+	   if (pos == 2 || pos == 3 || pos == 4 || pos == 9 || pos == 10 || pos == 11)
+	   {
+		   cout << '#';
+	   }
+	   else
+	   {
+		   cout << ' ';
+	   }
+
+   }
+   cout << '\n';
+
+   //line 7 - repeat of line 2
+
+   for (size_t pos = 0; pos < SizeOfLine; pos++)
+   {
+	   if (pos == 1 || pos == 2 || pos == 11 || pos == 12)
+	   {
+		   cout << '#';
+	   }
+	   else
+	   {
+		   cout << ' ';
+	   }
+
+   }
+   cout << '\n';
+
+   //line 8 - repeat of line 1
+
+   for (size_t pos = 0; pos < SizeOfLine; pos++)
+   {
+	   if (pos == 0 || pos == 13)
+	   {
+		   cout << '#';
+	   }
+	   else
+	   {
+		   cout << ' ';
+	   }
+
+   }
+   cout << '\n';
 	
-	//line 6 - repeat of line 3
 
-	for (size_t pos = 0; pos < SizeOfLine; pos++)
-	{
-		if (pos == 2 || pos == 3 || pos == 4 || pos == 9 || pos == 10 || pos == 11)
-		{
-			cout << '#';
-		}
-		else
-		{
-			cout << ' ';
-		}
+	cout << "Solution 2: Line by Line Solution Using Functions" << endl;
 
-	}
-	cout << '\n';
-
-	//line 7 - repeat of line 2
-
-	for (size_t pos = 0; pos < SizeOfLine; pos++)
-	{
-		if (pos == 1 || pos == 2 || pos == 11 || pos == 12)
-		{
-			cout << '#';
-		}
-		else
-		{
-			cout << ' ';
-		}
-
-	}
-	cout << '\n';
-
-	//line 8 - repeat of line 1
-
-	for (size_t pos = 0; pos < SizeOfLine; pos++)
-	{
-		if (pos == 0 || pos == 13)
-		{
-			cout << '#';
-		}
-		else
-		{
-			cout << ' ';
-		}
-
-	}
-	cout << '\n';
-
-
+	Line1();
+	Line2();
+	Line3();
+	Line4and5();
+	Line3();
+	Line2();
+	Line1();
 
 
 	cout << "Test Solution 2: Split Shape into L/R Sides" << endl;

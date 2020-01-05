@@ -20,9 +20,11 @@ int main()
     cout << "Solution 1: " << '\n';
     cout << '\n';
 
+    //top half
+
     for (size_t i = 0; i < 4; i++)
     {   
-        for (size_t spaces = 1; spaces <= 3 - i; spaces++)
+        for (size_t spaces = 0; spaces < 3 - i; spaces++)
         {
             cout << ' ';
 
@@ -36,6 +38,24 @@ int main()
         cout << endl;
     }
         
-   
+   //bottom half
+
+    for (size_t i = 0; i < 4; i++)
+    {
+        for (size_t space = 1; space < i + 1 ; space++)
+        {
+            cout << ' ';
+        }
+
+        for (size_t hash = 0; hash < 8 - (2 * i); hash++)
+        {
+            cout << '#';
+        }
+
+        cout << endl;
+    }
+
+
 }
+
 

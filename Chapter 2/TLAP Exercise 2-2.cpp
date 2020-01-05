@@ -11,6 +11,12 @@
 //    ##
 
 
+//This is a bit of a Kobayashi Maru because the restrictions were to only use "Using only single character output statements
+//that ouput a hash mark, a space, or an end of line," - not sure if that meant only one time or not. I could not find a situation
+//where I could iterate through the entire shape as the repeating eight hashes is not mathematically repeatable with a standard 
+//counting sequence. If anyone is aware of a more elegant solution, feel free to fork it. Thanks!
+
+
 #include <iostream>
 using std::cout;
 using std::endl;

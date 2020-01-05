@@ -20,15 +20,15 @@ int main()
     cout << "Solution 1: " << '\n';
     cout << '\n';
 
-    for (size_t i = 0; i < 7; i++)
+    for (size_t i = 0; i < 4; i++)
     {   
-        for (size_t spaces = 1; spaces <= 7 - i; spaces++)
+        for (size_t spaces = 1; spaces <= 3 - i; spaces++)
         {
             cout << ' ';
 
         }
             
-        for (size_t hashes = 0; hashes < 2 + (2 * 7-i-3); hashes++)
+        for (size_t hashes = 0; hashes < 2 + (2 * i); hashes++)
         {
             cout << '#';
         }
